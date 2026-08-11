@@ -1,15 +1,3 @@
-@import "tailwindcss";
-
-/* Reveal-on-scroll (port of design script.js fade-in) */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
 /* ========================================
    DentaCraft Lab — Tech Blue Theme
    ======================================== */
