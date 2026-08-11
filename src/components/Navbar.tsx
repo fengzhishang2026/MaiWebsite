@@ -45,9 +45,9 @@ export default function Navbar() {
     >
       <div className="nav-container">
         <a href="#home" className="nav-logo">
-          <img src="/logo.png" alt="DentaCraft" className="logo-icon" />
+          <img src="/logo.png" alt="WheatWatch" className="logo-icon" />
           <span className="logo-text">
-            Denta<span className="logo-accent">Craft</span>
+            Wheat<span className="logo-accent">Watch</span>
           </span>
         </a>
 
