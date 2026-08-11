@@ -1,4 +1,6 @@
-export default function Hero() {
+import type { Dictionary } from "@/app/[lang]/dictionaries";
+
+export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
   return (
     <section className="hero" id="home">
       <div className="hero-bg">
@@ -12,21 +14,18 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="badge-dot" />
-            Trusted by 500+ Dental Clinics Worldwide
+            {dict.badge}
           </div>
           <h1 className="hero-title">
-            Precision Dental
+            {dict.titleLine1}
             <br />
-            Restorations, <span className="gradient-text">Delivered Globally</span>
+            {dict.titleLine2}
+            <span className="gradient-text">{dict.titleHighlight}</span>
           </h1>
-          <p className="hero-subtitle">
-            From implant bridges to flexible partials, we craft high-quality,
-            custom dental prosthetics using cutting-edge CAD/CAM technology —
-            serving overseas dental clinics with speed, precision, and care.
-          </p>
+          <p className="hero-subtitle">{dict.subtitle}</p>
           <div className="hero-actions">
             <a href="#products" className="btn btn-primary">
-              Explore Products
+              {dict.exploreProducts}
               <svg
                 width="16"
                 height="16"
@@ -39,24 +38,17 @@ export default function Hero() {
               </svg>
             </a>
             <a href="#contact" className="btn btn-outline">
-              Request a Quote
+              {dict.requestQuote}
             </a>
           </div>
           <div className="hero-stats">
-            <div className="stat-item">
-              <span className="stat-number">15+</span>
-              <span className="stat-label">Years Experience</span>
-            </div>
-            <div className="stat-divider" />
-            <div className="stat-item">
-              <span className="stat-number">500+</span>
-              <span className="stat-label">Clinics Served</span>
-            </div>
-            <div className="stat-divider" />
-            <div className="stat-item">
-              <span className="stat-number">30k+</span>
-              <span className="stat-label">Cases Delivered</span>
-            </div>
+            {dict.stats.map((stat, i) => (
+              <div className="stat-item" key={stat.label}>
+                <span className="stat-number">{stat.value}</span>
+                <span className="stat-label">{stat.label}</span>
+                {i < dict.stats.length - 1 && <div className="stat-divider" />}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -75,8 +67,8 @@ export default function Hero() {
               </svg>
             </div>
             <div className="card-text">
-              <span className="card-title">CAD/CAM Powered</span>
-              <span className="card-desc">Digital precision manufacturing</span>
+              <span className="card-title">{dict.cards[0].title}</span>
+              <span className="card-desc">{dict.cards[0].desc}</span>
             </div>
           </div>
           <div className="hero-card hero-card-2">
@@ -94,8 +86,8 @@ export default function Hero() {
               </svg>
             </div>
             <div className="card-text">
-              <span className="card-title">Global Shipping</span>
-              <span className="card-desc">Fast &amp; secure worldwide delivery</span>
+              <span className="card-title">{dict.cards[1].title}</span>
+              <span className="card-desc">{dict.cards[1].desc}</span>
             </div>
           </div>
           <div className="hero-card hero-card-3">
@@ -112,8 +104,8 @@ export default function Hero() {
               </svg>
             </div>
             <div className="card-text">
-              <span className="card-title">ISO Certified</span>
-              <span className="card-desc">FDA &amp; CE compliant products</span>
+              <span className="card-title">{dict.cards[2].title}</span>
+              <span className="card-desc">{dict.cards[2].desc}</span>
             </div>
           </div>
 
@@ -125,7 +117,7 @@ export default function Hero() {
 
       <div className="scroll-indicator">
         <div className="scroll-line" />
-        <span>Scroll</span>
+        <span>{dict.scroll}</span>
       </div>
     </section>
   );

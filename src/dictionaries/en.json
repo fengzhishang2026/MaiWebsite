@@ -1,0 +1,216 @@
+{
+  "nav": {
+    "links": ["Home", "Products", "Technology", "About", "Contact"],
+    "whatsapp": "WhatsApp",
+    "toggleMenu": "Toggle menu"
+  },
+  "metadata": {
+    "title": "SmartSmile — Precision Dental Restorations, Delivered Globally",
+    "description": "Premium Dental Lab Solutions — high-quality dentures, implants, and dental restorations crafted with CAD/CAM technology for overseas clinics."
+  },
+  "hero": {
+    "badge": "Trusted by 500+ Dental Clinics Worldwide",
+    "titleLine1": "Precision Dental",
+    "titleLine2": "Restorations, ",
+    "titleHighlight": "Delivered Globally",
+    "subtitle": "From implant bridges to flexible partials, we craft high-quality, custom dental prosthetics using cutting-edge CAD/CAM technology — serving overseas dental clinics with speed, precision, and care.",
+    "exploreProducts": "Explore Products",
+    "requestQuote": "Request a Quote",
+    "stats": [
+      { "value": "15+", "label": "Years Experience" },
+      { "value": "500+", "label": "Clinics Served" },
+      { "value": "30k+", "label": "Cases Delivered" }
+    ],
+    "cards": [
+      { "title": "CAD/CAM Powered", "desc": "Digital precision manufacturing" },
+      { "title": "Global Shipping", "desc": "Fast & secure worldwide delivery" },
+      { "title": "ISO Certified", "desc": "FDA & CE compliant products" }
+    ],
+    "scroll": "Scroll"
+  },
+  "products": {
+    "tag": "Our Products",
+    "title": "Comprehensive Dental Solutions",
+    "desc": "From full arch restorations to precision attachments, explore our complete range of dental prosthetic products.",
+    "learnMore": "Learn more",
+    "items": [
+      {
+        "title": "Implant Solutions",
+        "description": "Bar overdentures, Malo implant bridges, custom abutments, and surgical guides — engineered for precision and longevity.",
+        "features": [
+          "Screw-retained superstructures",
+          "All-on-4 / All-on-6 concepts",
+          "Digital implant planning"
+        ]
+      },
+      {
+        "title": "Removable Dentures",
+        "description": "Full and partial dentures crafted with premium materials for natural aesthetics and superior comfort.",
+        "features": [
+          "Complete & partial dentures",
+          "Immediate & temporary options",
+          "Flexible nylon frameworks"
+        ]
+      },
+      {
+        "title": "Precision Frameworks",
+        "description": "Co-Cr, titanium, and gold-electroformed frameworks produced with high precision for exceptional fit and durability.",
+        "features": [
+          "CAD/CAM milled frameworks",
+          "Metal-free alternatives",
+          "3D-printed options available"
+        ]
+      },
+      {
+        "title": "Fixed Restorations",
+        "description": "Zirconia crowns and bridges with lifelike aesthetics and strength for long-span restorations in any position.",
+        "features": [
+          "Full-contour zirconia",
+          "Long-span bridge solutions",
+          "Excellent for implant cases"
+        ]
+      },
+      {
+        "title": "Attachments & Precision Parts",
+        "description": "Reliable attachment systems for every clinical scenario — ball, magnetic, hinge, and spring solutions.",
+        "features": [
+          "Ball & socket attachments",
+          "Magnetic retention systems",
+          "Versatile placement options"
+        ]
+      },
+      {
+        "title": "Orthodontic & Protective",
+        "description": "Sports mouthguards, night guards, anti-snoring appliances, and orthodontic retainers — customized for every patient.",
+        "features": [
+          "Sports & night guards",
+          "Anti-snoring devices",
+          "Post-orthodontic retainers"
+        ]
+      }
+    ]
+  },
+  "technology": {
+    "tag": "Our Technology",
+    "title": "Digital Workflow, End to End",
+    "desc": "From digital impression to final delivery, our fully digital pipeline ensures accuracy, speed, and consistency in every case.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Digital Scan & Diagnosis",
+        "desc": "Receive intraoral scan data or traditional impressions. Our technicians perform digital diagnosis and treatment planning."
+      },
+      {
+        "number": "02",
+        "title": "3D Design & Planning",
+        "desc": "Virtual tooth arrangement, implant position planning, and surgical guide design using advanced CAD software."
+      },
+      {
+        "number": "03",
+        "title": "Precision Manufacturing",
+        "desc": "5-axis milling, 3D printing, and gold electroforming — each restoration crafted with sub-millimeter precision."
+      },
+      {
+        "number": "04",
+        "title": "Quality Check & Delivery",
+        "desc": "Rigorous quality inspection, try-in verification, and secure worldwide shipping to your clinic."
+      }
+    ]
+  },
+  "whyUs": {
+    "tag": "Why DentaCraft",
+    "title": "Built for Overseas Dental Clinics",
+    "desc": "We understand the unique challenges of sourcing dental restorations internationally. Here's why clinics across the globe trust us.",
+    "items": [
+      {
+        "title": "State-of-the-Art Facility",
+        "desc": "15,000+ sq.ft. digital dental lab equipped with the latest CAD/CAM systems."
+      },
+      {
+        "title": "Dedicated Support",
+        "desc": "Direct line to our technicians via WhatsApp, email, or video call — no middlemen."
+      },
+      {
+        "title": "Fast Turnaround",
+        "desc": "Standard cases delivered in 5–7 working days. Rush service available."
+      },
+      {
+        "title": "Quality Guarantee",
+        "desc": "ISO 13485 certified manufacturing with strict quality control at every step."
+      }
+    ],
+    "certs": [
+      {
+        "title": "ISO 13485 Certified",
+        "desc": "Medical device quality management system"
+      },
+      {
+        "title": "FDA Registered",
+        "desc": "Compliant with US FDA regulations"
+      },
+      {
+        "title": "CE Marked",
+        "desc": "Conforms to EU safety standards"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to Partner With Us?",
+    "desc": "Send us your case details and we'll get back to you within 24 hours with a quote and timeline.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "company": "Clinic / Company Name",
+    "productInterest": "Product Interest",
+    "productOptions": [
+      "Implant Solutions",
+      "Removable Dentures",
+      "Precision Frameworks",
+      "Fixed Restorations",
+      "Attachments",
+      "Orthodontic & Protective"
+    ],
+    "message": "Tell us about your case requirements...",
+    "sendInquiry": "Send Inquiry",
+    "sending": "Sending...",
+    "sent": "✓ Message Sent!"
+  },
+  "footer": {
+    "brand": "Premium dental restorations crafted with precision and delivered worldwide. Trusted by 500+ clinics across 30+ countries.",
+    "contactEmail": "info@dentacraft.com",
+    "whatsapp": "WhatsApp: +86 138 0000 0000",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          "Implant Solutions",
+          "Removable Dentures",
+          "Precision Frameworks",
+          "Fixed Restorations",
+          "Attachments",
+          "Orthodontic & Protective"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About Us",
+          "Technology",
+          "Quality & Certifications",
+          "Shipping & Logistics",
+          "FAQ"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Case Studies",
+          "Technical Guides",
+          "Material Selection",
+          "Warranty Policy"
+        ]
+      }
+    ],
+    "copyright": "© 2026 DentaCraft Lab. All rights reserved.",
+    "bottomLinks": ["Privacy Policy", "Terms of Service", "Disclaimer"]
+  }
+}

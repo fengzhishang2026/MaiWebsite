@@ -1,37 +1,6 @@
-const FOOTER_LINKS = [
-  {
-    title: "Products",
-    links: [
-      "Implant Solutions",
-      "Removable Dentures",
-      "Precision Frameworks",
-      "Fixed Restorations",
-      "Attachments",
-      "Orthodontic & Protective",
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      "About Us",
-      "Technology",
-      "Quality & Certifications",
-      "Shipping & Logistics",
-      "FAQ",
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      "Case Studies",
-      "Technical Guides",
-      "Material Selection",
-      "Warranty Policy",
-    ],
-  },
-];
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-export default function Footer() {
+export default function Footer({ dict }: { dict: Dictionary["footer"] }) {
   return (
     <footer className="footer">
       <div className="container">
@@ -60,23 +29,20 @@ export default function Footer() {
                 Denta<span className="logo-accent">Craft</span>
               </span>
             </a>
-            <p>
-              Premium dental restorations crafted with precision and delivered
-              worldwide. Trusted by 500+ clinics across 30+ countries.
-            </p>
+            <p>{dict.brand}</p>
             <div className="footer-contact">
-              <a href="mailto:info@dentacraft.com">info@dentacraft.com</a>
+              <a href={`mailto:${dict.contactEmail}`}>{dict.contactEmail}</a>
               <a
                 href="https://wa.me/8613800000000"
                 target="_blank"
                 rel="noopener"
               >
-                WhatsApp: +86 138 0000 0000
+                {dict.whatsapp}
               </a>
             </div>
           </div>
 
-          {FOOTER_LINKS.map((col) => (
+          {dict.columns.map((col) => (
             <div className="footer-links" key={col.title}>
               <h4>{col.title}</h4>
               <ul>
@@ -91,11 +57,13 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 DentaCraft Lab. All rights reserved.</p>
+          <p>{dict.copyright}</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Disclaimer</a>
+            {dict.bottomLinks.map((link) => (
+              <a href="#" key={link}>
+                {link}
+              </a>
+            ))}
           </div>
         </div>
       </div>

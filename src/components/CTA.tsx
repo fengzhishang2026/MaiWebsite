@@ -1,17 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-const PRODUCT_OPTIONS = [
-  "Implant Solutions",
-  "Removable Dentures",
-  "Precision Frameworks",
-  "Fixed Restorations",
-  "Attachments",
-  "Orthodontic & Protective",
-];
-
-export default function CTA() {
+export default function CTA({ dict }: { dict: Dictionary["cta"] }) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [disabled, setDisabled] = useState(false);
 
@@ -37,32 +29,26 @@ export default function CTA() {
       <div className="container">
         <div className="cta-box">
           <div className="cta-content">
-            <h2>Ready to Partner With Us?</h2>
-            <p>
-              Send us your case details and we&apos;ll get back to you within 24
-              hours with a quote and timeline.
-            </p>
+            <h2>{dict.heading}</h2>
+            <p>{dict.desc}</p>
           </div>
           <form className="cta-form" onSubmit={handleSubmit} noValidate={false}>
             <div className="form-row">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Email Address" required />
+              <input type="text" placeholder={dict.name} required />
+              <input type="email" placeholder={dict.email} required />
             </div>
             <div className="form-row">
-              <input type="text" placeholder="Clinic / Company Name" />
+              <input type="text" placeholder={dict.company} />
               <select defaultValue="">
                 <option value="" disabled>
-                  Product Interest
+                  {dict.productInterest}
                 </option>
-                {PRODUCT_OPTIONS.map((opt) => (
+                {dict.productOptions.map((opt) => (
                   <option key={opt}>{opt}</option>
                 ))}
               </select>
             </div>
-            <textarea
-              placeholder="Tell us about your case requirements..."
-              rows={4}
-            />
+            <textarea placeholder={dict.message} rows={4} />
             <button
               type="submit"
               className="btn btn-primary btn-full"
@@ -78,7 +64,7 @@ export default function CTA() {
             >
               {status === "idle" && (
                 <>
-                  Send Inquiry
+                  {dict.sendInquiry}
                   <svg
                     width="16"
                     height="16"
@@ -91,8 +77,8 @@ export default function CTA() {
                   </svg>
                 </>
               )}
-              {status === "sending" && "Sending..."}
-              {status === "sent" && "✓ Message Sent!"}
+              {status === "sending" && dict.sending}
+              {status === "sent" && dict.sent}
             </button>
           </form>
         </div>
