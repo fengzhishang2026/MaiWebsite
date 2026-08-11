@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "WheatWatch — Precision Dental Restorations, Delivered Globally",
+  title: "SmartSmile — Precision Dental Restorations, Delivered Globally",
   description:
     "Premium Dental Lab Solutions — high-quality dentures, implants, and dental restorations crafted with CAD/CAM technology for overseas clinics.",
 };
